@@ -1,0 +1,31 @@
+#LOG - CONFIG
+# server
+listenPort: 5000
+
+#debug = "true": loguea "errors", "warn", "fatal" y "debug"
+#        a la consola, "info" es logueado tambien pero solo al archivo de log para no ensuciar la consola
+
+#        "false": loguea solo a archivos, y segun lo que diga log.level
+debug:      false
+localMode:  false
+
+log:
+  #level = "info" loguea siempre
+  #level = "error" loguea solo errores
+  #level = "fatal" loguea solo una caida del server
+  level:     info
+
+# databases
+database:
+  redis:
+# IP Posta:       172.31.29.221   172.17.0.1
+
+    host:         172.31.29.221
+    port:         6379
+    maxActive:    0
+    maxIdle:      3
+    idleTimeout:  10
+
+  mongo:
+    host: localhost
+    port: 0000

@@ -1,0 +1,11 @@
+finneg\.com\.key
+
+STAR_finneg_com\.crt
+
+application
+
+*.log
+
+ecoserver\.log
+
+\.idea/
